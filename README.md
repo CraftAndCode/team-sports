@@ -1,31 +1,35 @@
+### @autoOpen = true
+### ~avatar
+Hello! Welcome to MakeCode, the place where you can program your Micro:bit to do fantastic things!
+### ~
+## Coding
 
-> Open this page at [https://craftandcode.github.io/team-sports/](https://craftandcode.github.io/team-sports/)
+```codecard
+[
+{
+    "name": "2.1 Digital input",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/flashing-leds", 
+    "description": "Learn to monitor ", 
+    "cardType": "tutorial",
+    "label": "Easy",
+    "labelClass": "green ribbon small"
+}
+]
+```
 
-## Использовать это расширение
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/craftandcode/team-sports** and import
-
-## Править этот проект ![Build status badge](https://github.com/craftandcode/team-sports/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/craftandcode/team-sports** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/craftandcode/team-sports/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## Team Sports
+This is a program for your team sports and instructions on how to modify it.
+```codecard
+[
+{
+    "name": "Personalize your team sports!",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/mood-badge/badge", 
+    "description": "Make your badge show actual moods, with name and time", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
+}
+]
+```

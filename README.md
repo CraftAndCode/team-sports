@@ -7,13 +7,13 @@ Hello! Welcome to MakeCode, the place where you can program your Micro:bit to do
 ```codecard
 [
 {
-    "name": "2.1 Digital input",
+    "name": "3.1 Conditions and statements",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/flashing-leds", 
-    "description": "Learn to monitor ", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/conditions-and-statements", 
+    "description": "Teach your micro:bit to make its own decisions", 
     "cardType": "tutorial",
-    "label": "Easy",
-    "labelClass": "green ribbon small"
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
 }
 ]
 ```

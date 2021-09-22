@@ -14,6 +14,15 @@ Hello! Welcome to MakeCode, the place where you can program your Micro:bit to do
     "cardType": "tutorial",
     "label": "Advanced",
     "labelClass": "orange ribbon small"
+},
+{
+    "name": "3.2 Advanced sensors",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/advanced-sensors", 
+    "description": "Program Micro:bit to perform certain actions based on sensor readings", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
 }
 ]
 ```

@@ -16,10 +16,10 @@ input.onButtonPressed(Button.B, function () {
 let goal1 = 0
 let goal = 0
 let Pause = false
-let RightPlayer = ""
-let LeftPlayer = ""
 let RightPlayerScore = 0
 let LeftPlayerScore = 0
+let LeftPlayer = "Player 1"
+let RightPlayer = "Player 2"
 LeftPlayerScore = 0
 RightPlayerScore = 0
 let ScoreToWin = 5
@@ -29,13 +29,10 @@ while (!(input.logoIsPressed())) {
     basic.pause(1)
 }
 basic.clearScreen()
-if (LeftPlayer != "" && RightPlayer != "") {
-    basic.showString("" + RightPlayer + " vs " + LeftPlayer)
-} else if (LeftPlayer != "" || RightPlayer != "") {
-    basic.showString("" + RightPlayer + LeftPlayer)
-} else {
-    basic.showString("GO!")
-}
+proportionalFont.showString("" + LeftPlayer + " vs " + RightPlayer, 150)
+proportionalFont.showSpace(5, 150)
+basic.pause(500)
+basic.showString("GO!")
 music.setVolume(255)
 music.playTone(466, music.beat(BeatFraction.Whole))
 music.rest(music.beat(BeatFraction.Whole))
@@ -70,7 +67,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (StartTime > MatchTime * 60000) {
+    if (control.millis() > StartTime + MatchTime * 60000) {
         Pause = true
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
         basic.showLeds(`
@@ -81,28 +78,22 @@ basic.forever(function () {
             # # # # #
             `)
         basic.pause(1000)
-        if (LeftPlayer == "" || RightPlayer == "") {
+        if (LeftPlayerScore > RightPlayerScore) {
             while (true) {
-                basic.showString("" + LeftPlayerScore + "-" + RightPlayerScore + "   ")
+                proportionalFont.showString("" + LeftPlayer + " wins!", 150)
+            }
+        } else if (LeftPlayerScore < RightPlayerScore) {
+            while (true) {
+                proportionalFont.showString("" + RightPlayer + " wins!", 150)
             }
         } else {
-            if (LeftPlayerScore > RightPlayerScore) {
-                while (true) {
-                    basic.showString("" + LeftPlayer + " wins!")
-                }
-            } else if (LeftPlayerScore < RightPlayerScore) {
-                while (true) {
-                    basic.showString("" + RightPlayer + " wins!")
-                }
-            } else {
-                while (true) {
-                    basic.showString(" Draw!")
-                }
+            while (true) {
+                proportionalFont.showString("Draw!", 150)
             }
         }
     } else if (!(Pause)) {
         led.plotBarGraph(
-        MatchTime * 60000 - control.millis(),
+        StartTime + MatchTime * 60000 - control.millis(),
         MatchTime * 60000
         )
     }

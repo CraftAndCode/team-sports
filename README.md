@@ -23,6 +23,15 @@ Hello! Welcome to MakeCode, the place where you can program your Micro:bit to do
     "cardType": "tutorial",
     "label": "Advanced",
     "labelClass": "orange ribbon small"
+},
+{
+    "name": "3.3 Logical operations",
+    "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/logical-operations", 
+    "description": "Teach Micro:bit to understand the words `AND`, `OR` and `NOT`.", 
+    "cardType": "tutorial",
+    "label": "Advanced",
+    "labelClass": "orange ribbon small"
 }
 ]
 ```

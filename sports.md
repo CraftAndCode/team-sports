@@ -8,21 +8,6 @@ proportionalFont=github:lwchkg/pxt-proportional-font
 ```
 
 ```template
-input.onButtonPressed(Button.A, function () {
-    Pause = true
-    basic.showNumber(LeftPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
-input.onButtonPressed(Button.AB, function () {
-    control.reset()
-})
-input.onButtonPressed(Button.B, function () {
-    Pause = true
-    basic.showNumber(RightPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
 let goal1 = 0
 let goal = 0
 let Pause = false
@@ -54,6 +39,21 @@ music.playTone(932, music.beat(BeatFraction.Double))
 basic.pause(1000)
 Pause = false
 let StartTime = control.millis()
+input.onButtonPressed(Button.A, function () {
+    Pause = true
+    basic.showNumber(LeftPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
+input.onButtonPressed(Button.B, function () {
+    Pause = true
+    basic.showNumber(RightPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
 basic.forever(function () {
     goal = pins.digitalReadPin(DigitalPin.P1)
     goal1 = pins.digitalReadPin(DigitalPin.P2)
@@ -112,21 +112,6 @@ basic.forever(function () {
 ```
 
 ```blocks
-input.onButtonPressed(Button.A, function () {
-    Pause = true
-    basic.showNumber(LeftPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
-input.onButtonPressed(Button.AB, function () {
-    control.reset()
-})
-input.onButtonPressed(Button.B, function () {
-    Pause = true
-    basic.showNumber(RightPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
 let goal1 = 0
 let goal = 0
 let Pause = false
@@ -158,6 +143,21 @@ music.playTone(932, music.beat(BeatFraction.Double))
 basic.pause(1000)
 Pause = false
 let StartTime = control.millis()
+input.onButtonPressed(Button.A, function () {
+    Pause = true
+    basic.showNumber(LeftPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
+input.onButtonPressed(Button.B, function () {
+    Pause = true
+    basic.showNumber(RightPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
 basic.forever(function () {
     goal = pins.digitalReadPin(DigitalPin.P1)
     goal1 = pins.digitalReadPin(DigitalPin.P2)

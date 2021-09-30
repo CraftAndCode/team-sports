@@ -43,7 +43,7 @@ This is a program for your team sports and instructions on how to modify it.
 {
     "name": "Change the game rules!",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:48076-59206-00318-18952", 
+    "url": "https://makecode.microbit.org/#tutorial:47103-93764-70327-48939", 
     "description": "Put in the teams' names, change the match time and other", 
     "cardType": "tutorial",
     "label": "Easy",

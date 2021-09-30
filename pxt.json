@@ -11,7 +11,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "sports.md"
+        "sports.md",
+        "ru.md"
     ],
     "testFiles": [
         "test.ts"

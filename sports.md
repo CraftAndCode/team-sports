@@ -8,21 +8,6 @@ proportionalFont=github:lwchkg/pxt-proportional-font
 ```
 
 ```template
-input.onButtonPressed(Button.A, function () {
-    Pause = true
-    basic.showNumber(LeftPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
-input.onButtonPressed(Button.AB, function () {
-    control.reset()
-})
-input.onButtonPressed(Button.B, function () {
-    Pause = true
-    basic.showNumber(RightPlayerScore)
-    basic.pause(1000)
-    Pause = false
-})
 let goal1 = 0
 let goal = 0
 let Pause = false

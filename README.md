@@ -43,11 +43,11 @@ This is a program for your team sports and instructions on how to modify it.
 {
     "name": "Personalize your team sports!",
     "imageUrl":"https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif",
-    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/mood-badge/badge", 
+    "url": "https://makecode.microbit.org/#tutorial:github:craftandcode/team-sports/teamsports", 
     "description": "Put in the teams' names, change the match time and other", 
     "cardType": "tutorial",
-    "label": "Advanced",
-    "labelClass": "orange ribbon small"
+    "label": "Easy",
+    "labelClass": "green ribbon small"
 }
 ]
 ```

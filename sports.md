@@ -30,8 +30,6 @@ let LeftPlayerScore = 0
 let Pause = false
 let LeftPlayer = "Player 1"
 let RightPlayer = "Player 2"
-LeftPlayerScore = 0
-RightPlayerScore = 0
 let ScoreToWin = 5
 let MatchTime = 3
 basic.showArrow(ArrowNames.North)

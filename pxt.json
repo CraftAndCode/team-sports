@@ -10,8 +10,7 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md",
-        "teamsports.md"
+        "README.md"
     ],
     "testFiles": [
         "test.ts"

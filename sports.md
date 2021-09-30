@@ -97,6 +97,21 @@ basic.forever(function () {
 ```
 
 ```blocks
+input.onButtonPressed(Button.A, function () {
+    Pause = true
+    basic.showNumber(LeftPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
+input.onButtonPressed(Button.B, function () {
+    Pause = true
+    basic.showNumber(RightPlayerScore)
+    basic.pause(1000)
+    Pause = false
+})
 ```
 ## Step 0 @showDialog
 Hello! This is a program for your Team Sports. Let's modify it!

@@ -97,8 +97,8 @@ basic.forever(function () {
         }
     } else if (!(Pause)) {
         led.plotBarGraph(
-            StartTime + MatchTime * 60000 - control.millis(),
-            MatchTime * 60000
+        StartTime + MatchTime * 60000 - control.millis(),
+        MatchTime * 60000
         )
     }
 })

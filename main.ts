@@ -49,25 +49,27 @@ basic.pause(1000)
 Pause = false
 let StartTime = control.millis()
 basic.forever(function () {
-    goal = pins.digitalReadPin(DigitalPin.P1)
-    goal1 = pins.digitalReadPin(DigitalPin.P2)
-    if (goal1 == 0 && !(goal == 0)) {
-        Pause = true
-        RightPlayerScore += 1
-        music.startMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once)
-        basic.showNumber(RightPlayerScore)
-        basic.pause(500)
-        goal1 = 0
-        Pause = false
-    }
-    if (goal == 0 && !(goal1 == 0)) {
-        Pause = true
-        LeftPlayerScore += 1
-        music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
-        basic.showNumber(LeftPlayerScore)
-        basic.pause(500)
-        goal = 0
-        Pause = false
+    if (!(Pause)) {
+        goal = pins.digitalReadPin(DigitalPin.P1)
+        goal1 = pins.digitalReadPin(DigitalPin.P2)
+        if (goal1 == 0 && !(goal == 0)) {
+            Pause = true
+            RightPlayerScore += 1
+            music.startMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once)
+            basic.showNumber(RightPlayerScore)
+            basic.pause(500)
+            goal1 = 0
+            Pause = false
+        }
+        if (goal == 0 && !(goal1 == 0)) {
+            Pause = true
+            LeftPlayerScore += 1
+            music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
+            basic.showNumber(LeftPlayerScore)
+            basic.pause(500)
+            goal = 0
+            Pause = false
+        }
     }
 })
 basic.forever(function () {

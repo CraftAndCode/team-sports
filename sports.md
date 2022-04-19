@@ -1,4 +1,4 @@
-# Team Sports
+# Smart Soccer
 
 ```package
 core
@@ -119,7 +119,7 @@ basic.forever(function () {
 
 ```
 ## Step 0 @showDialog
-Hello! This is a program for your Team Sports. Let's modify it!
+Hello! This is a program for your Smart Soccer. Let's modify it!
 
 ## Step 1 @showDialog
 

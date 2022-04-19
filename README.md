@@ -50,7 +50,7 @@ Hello! Welcome to MakeCode, a place where you can program your Micro:bit to do f
 ]
 ```
 
-## Team Sports
+## Smart Soccer
 This is a program for your smart soccer and instructions on how to modify it.
 ```codecard
 [

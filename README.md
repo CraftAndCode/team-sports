@@ -1,8 +1,13 @@
 ### @autoOpen = true
 ### ~avatar
-Hello! Welcome to MakeCode, the place where you can program your Micro:bit to do fantastic things!
+Hello! Welcome to MakeCode, a place where you can program your Micro:bit to do fantastic things!
 ### ~
-## Coding
+#### 1. Connect your Micro:bit with a USB cable.
+#### 2. Press the `||led....||` - `||led.Сonnect device||` button and follow the steps given.
+#### 3. Download the program by pressing the `||led.Download||` button.
+#### 4. Learn coding with our interactive tutorials.
+
+## Learn coding
 
 ```codecard
 [
